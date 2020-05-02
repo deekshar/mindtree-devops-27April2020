@@ -1,11 +1,15 @@
 To Setup Terraform follow the below steps: 
 
 Step1: Download Terraform
-==>  wget https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_openbsd_amd64.zip
-==>  tar -zxvf terraform_0.12.24_openbsd_amd64.zip 
-==>  source ~/.bashrc 
-==>  chmod +x bin/terraform
-==>  teraform version
+==>  wget https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip
+==>  apt-get install unzip -y 
+==>  unzip terraform_0.12.24_linux_amd64.zip 
+==>  mv terraform /usr/bin/terraform
+==>  chmod +x /usr/bin/terraform
+==>  export PATH=$PATH:/usr/bin/terraform
+==>  echo "export PATH=$PATH:/usr/bin/terraform" >>  ~/.bashrc
+==>  source  ~/.bashrc
+==>  teraform --version
 
 
 Step2: Setup an AWS Account 
