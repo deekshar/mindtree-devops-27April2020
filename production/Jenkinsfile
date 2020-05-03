@@ -29,7 +29,9 @@ node {
 }
 
  stage('Petclinic Ansible Deployment - PROD') {
-            sh label: '', script: 'ansible-playbook -u root playbook.yaml'
+            sh label: '', script: 'ssh root@10.0.0.4'
+	    sh label: '', script: 'cd /root/mindtree-devops-27April2020/04-Ansible/05-Tomcat/'
+	    sh label: '', script: 'ansible-playbook playbook.yaml'
         }
 
 
