@@ -5,7 +5,7 @@
   become: yes
   vars: 
     doc_root: "/var/www/html"
-    username: "Amit Vashist - Terraform Test"
+    username: "Deeksha - Terraform Test"
  
   tasks: 
   - name: Install Apache2 Packages
